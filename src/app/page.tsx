@@ -1,9 +1,37 @@
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        {/* 主题测试元素 */}
+        <div className="flex flex-col gap-4 w-full">
+          <h1 className="text-2xl font-bold text-primary">楞严经科判表与AI解析平台</h1>
+          <div className="p-4 bg-card text-card-foreground rounded-lg border border-border">
+            主题色彩测试卡片
+          </div>
+          <div className="p-4 bg-secondary text-secondary-foreground rounded-lg">
+            次要颜色测试区块
+          </div>
+          <div className="p-4 bg-muted text-muted-foreground rounded-lg">
+            弱化颜色测试区块
+          </div>
+          <div className="p-4 bg-accent text-accent-foreground rounded-lg">
+            强调色测试区块
+          </div>
+          
+          {/* Shadcn按钮组件测试 */}
+          <div className="flex items-center gap-4 mt-4">
+            <Button variant="default">默认按钮</Button>
+            <Button variant="secondary">次要按钮</Button>
+            <Button variant="outline">轮廓按钮</Button>
+            <Button variant="destructive">警告按钮</Button>
+            <Button variant="ghost">幽灵按钮</Button>
+            <Button variant="link">链接按钮</Button>
+          </div>
+        </div>
+
         <Image
           className="dark:invert"
           src="/next.svg"
